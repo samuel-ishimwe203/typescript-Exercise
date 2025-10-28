@@ -7,12 +7,26 @@
 </head>
 <body>
     
-    <input type="number" name="num" id="first-input" placeholder="firstnumber">
-    <input type="number" name="num" id="first-input" placeholder="firstnumber">
-    <button type="number" class="button">send</button>
-      <button type="number" name="num" class="screen" >00:00</button>
+    <input  name="num" id="first-input" placeholder="firstnumber">
+    <input name="num" id="second-input" placeholder="second-input">
+    <button  class="button">send</button>
+      <button  class="screen" >00:00</button>
       <script>
-        
+        const button =document.querySelector('.button');
+        const screen = document.querySelector('.screen');
+        const firstInput = document.getElementById('first-input');
+        const secondInput = document.getElementById('second-input');
+
+        function addNumbers(a, b){
+            
+            if(typeof a ==='number' && typeof b ==='number'){
+                screen.innerHTML=a + b;
+            }else{
+                screen.innerHTML=parseInt(a) + parseInt(b);
+            }
+        }
+
+        button.addEventListener('click',()=> addNumbers(firstInput.value, secondInput.value));
       </script>
 
 </body>
