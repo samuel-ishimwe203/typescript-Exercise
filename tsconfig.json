@@ -44,5 +44,6 @@
     "moduleDetection": "force",
     "noEmitOnError": true,
     "skipLibCheck": true
-  }
+  },
+  "include":["src"]
 }
