@@ -40,3 +40,36 @@ const greetObjAliase=(user:objWithName)=>{
 }
 
 greetObjAliase({name:'sameul',uid:10})
+
+// function Example 1
+
+let funct:(a:string, b:string)=>void;
+funct=(name, greeting)=>{
+    console.log(`${name} says ${greeting}`)
+}
+funct('sameul', 'hello my friend')
+
+// Example 2
+
+let calcu:(numOne:number, numTwo:number, action:string)=>number;
+calcu=(numOne, numTwo, action)=>{
+    if(action==='add'){
+        return numOne+numTwo;
+    }else{
+        return numOne-numTwo;
+    }
+}
+console.log(calcu(10,5,'add'));
+console.log(calcu(10,5,'subtract'));
+
+// Example 3
+
+let logDetail :(obj:({name:string, age:number}))=>void;
+
+type person={name:string, age:number}
+
+logDetail=(sam)=>{
+console.log(`${sam.name} is ${sam.age} years old`)
+}
+
+logDetail({name:'samuel',age:34})
