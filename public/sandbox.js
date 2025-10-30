@@ -15,6 +15,14 @@ const logDetails = (uid, item) => {
 const greetAgain = (user) => {
     console.log(`${user.name} says hello`);
 };
-greetAgain({ name: 'samuel', uid: 59 });
+greetAgain({ name: 'samuel', uid: 49 });
+const greetAliase = (user) => {
+    console.log(`${user.name} he is from Nyagatare`);
+};
+greetAliase({ name: 'sameul', uid: 19 });
+const greetObjAliase = (user) => {
+    console.log(`${user.name} he want to sleep pe !!!`);
+};
+greetObjAliase({ name: 'sameul', uid: 10 });
 export {};
 //# sourceMappingURL=sandbox.js.map

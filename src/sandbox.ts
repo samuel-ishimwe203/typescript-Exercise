@@ -24,3 +24,19 @@ const greetAgain =(user:{name:string, uid:string|number})=>{
     console.log(`${user.name} says hello`)
 }
 greetAgain({name:'samuel',uid:49});
+
+// now how to use aliases 
+
+type stringOrNumb=string|number;
+
+const greetAliase =(user:{name:string, uid:stringOrNumb})=>{
+    console.log(`${user.name} he is from Nyagatare`)
+}
+greetAliase({name:'sameul',uid:19})
+
+type objWithName={name:string,uid:stringOrNumb};
+const greetObjAliase=(user:objWithName)=>{
+    console.log(`${user.name} he want to sleep pe !!!`)
+}
+
+greetObjAliase({name:'sameul',uid:10})
