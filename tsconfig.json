@@ -3,14 +3,12 @@
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
-    "outDir": "./dist",
-    "removeComments": true,
- 
+    "outDir": "./public",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
-    "target": "ES2016",
+    "module": "es6",
+    "target": "es6",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -28,7 +26,6 @@
 
     // Style Options
     // "noImplicitReturns": true,
-  
     // "noImplicitOverride": true,
     // "noUnusedLocals": true,
     // "noUnusedParameters": true,
@@ -42,8 +39,8 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "noEmitOnError": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
   },
-  "include":["src"]
+
+  "include": ["src"],
 }
