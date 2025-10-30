@@ -23,4 +23,4 @@ const logDetails =(uid:string|number, item:string)=>{
 const greetAgain =(user:{name:string, uid:string|number})=>{
     console.log(`${user.name} says hello`)
 }
-greetAgain({name:'samuel',uid:59});
+greetAgain({name:'samuel',uid:49});
