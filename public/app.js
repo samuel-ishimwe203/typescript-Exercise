@@ -11,6 +11,11 @@ const me = {
     }
 };
 console.log(me);
+const greet = (person) => {
+    console.log('hello ', person.name);
+};
+greet(me);
+console.log(me);
 import { Invoice } from "./classes/invoice.js";
 const invoiceOne = new Invoice('samuel', 'kigali-nyagatare', 400);
 const invoiceTwo = new Invoice('Elie', 'Gasabo-nyagatare', 1000);
