@@ -1,14 +1,17 @@
 //  TypeScript class
-class Invoice {
-    constructor(a, b, c) {
-        this.client = a;
-        this.details = b;
-        this.amount = c;
+const me = {
+    name: 'samuel',
+    age: 34,
+    speak(text) {
+        console.log(text);
+    },
+    spend(num) {
+        console.log('I spent ', num);
+        return num;
     }
-    greet() {
-        return `${this.client} owns $${this.amount} for ${this.details}`;
-    }
-}
+};
+console.log(me);
+import { Invoice } from "./classes/invoice.js";
 const invoiceOne = new Invoice('samuel', 'kigali-nyagatare', 400);
 const invoiceTwo = new Invoice('Elie', 'Gasabo-nyagatare', 1000);
 let invoices = [];
@@ -31,5 +34,4 @@ form.addEventListener('submit', (e) => {
         amount: amount.valueAsNumber
     });
 });
-export {};
 //# sourceMappingURL=app.js.map

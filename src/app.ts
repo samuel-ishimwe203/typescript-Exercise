@@ -1,20 +1,29 @@
 //  TypeScript class
 
-class Invoice {
-    // client:string;
-    // details:string;
-    // amount:number;
-
-    constructor(
-         readonly client:string,
-         private details:string,
-        public amount:number,
-    ){}
-
-    greet(){
-return `${this.client} owns $${this.amount} for ${this.details}`
-    }
+interface isPerson{
+    name:string,
+    age:number,
+    speak(a:string):void,
+    spend(b:number):number;
 }
+
+const me: isPerson={
+    name:'samuel',
+    age:34,
+    speak(text:string):void{
+        console.log(text)
+    },
+    spend(num:number):number{
+        console.log('I spent ', num);
+        return num
+    }
+
+};
+console.log(me)
+
+
+
+import { Invoice } from "./classes/invoice.js";
 
 const invoiceOne= new Invoice('samuel','kigali-nyagatare',400); 
 const invoiceTwo= new Invoice('Elie','Gasabo-nyagatare',1000); 
