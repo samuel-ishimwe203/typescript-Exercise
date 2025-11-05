@@ -32,7 +32,7 @@ console.log(me)
 
 import { Invoice } from "./classes/invoice.js";
 
-const invoiceOne= new Invoice('samuel','kigali-nyagatare',400); 
+const invoiceOne= new Invoice('samuel','kigali-nyagatare',4000); 
 const invoiceTwo= new Invoice('Elie','Gasabo-nyagatare',1000); 
 
 let invoices:Invoice[]=[];
