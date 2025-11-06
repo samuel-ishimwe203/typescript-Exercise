@@ -9,7 +9,7 @@ enum role{
 
     function getRole(user:role){
         if(user===role.Admin){
-            console.log('you are allowed to enter to this site')
+            console.log('you are allowed to enter to this site please')
         }
         else if(user===role.User){
             console.log("you are allowed to enter but there is something that you can't access")
