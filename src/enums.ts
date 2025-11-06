@@ -21,3 +21,30 @@ enum role{
 
 
     console.log(getRole(role.Admin))
+
+    // 2 Example of enums
+
+enum StatusCode {
+  OK = 200,
+  BadRequest = 400,
+  Unauthorized = 401,
+  NotFound = 404,
+}
+
+    function getStatus(status:StatusCode){
+        if(status===StatusCode.OK){
+            return ('Request was successful')
+        
+        }else if(status===StatusCode.BadRequest){
+            return ('Bad request please check again')
+        }
+        else if(status===StatusCode.Unauthorized){
+            return ('You ar not allowed to access this page please')
+        }
+        else{
+            return ('Page not found please check again')
+        }
+    }
+
+    console.log(getStatus(StatusCode.BadRequest))
+    
