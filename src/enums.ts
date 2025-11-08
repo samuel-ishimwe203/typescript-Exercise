@@ -55,3 +55,23 @@ function identify<T>(value:T):T{
 
 console.log(identify<number>(200))
     
+// Interface : it is way to difine the structure or shape of an object in typescript , and what is properties , methods and their types.
+
+interface Person{
+    name:string;
+    age:number;
+    location?:string|number
+    greet():void;
+}
+
+const person1:Person={
+    name:'samuel',
+    age:22,
+    greet() {
+        console.log(`hello my name is ${this.name} and my age is ${this.age}`);
+    },
+    location:'USA'
+
+}
+
+person1.greet

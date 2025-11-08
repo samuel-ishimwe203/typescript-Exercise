@@ -45,5 +45,14 @@ function identify(value) {
     return value;
 }
 console.log(identify(200));
+const person1 = {
+    name: 'samuel',
+    age: 22,
+    greet() {
+        console.log(`hello my name is ${this.name} and my age is ${this.age}`);
+    },
+    location: 'USA'
+};
+person1.greet;
 export {};
 //# sourceMappingURL=enums.js.map
