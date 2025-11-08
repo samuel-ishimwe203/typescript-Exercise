@@ -70,8 +70,27 @@ const person1:Person={
     greet() {
         console.log(`hello my name is ${this.name} and my age is ${this.age}`);
     },
-    location:'USA'
+    location:'USA',
+    
 
 }
 
-person1.greet
+person1.greet()
+
+class Guest implements Person{
+    name: string;
+    age: number;
+
+    constructor(name:string,age:number){
+        this.name=name;
+        this.age=age;
+    }
+    greet(): void {
+        console.log(`hello my name is ${this.name} and my age is ${this.age}`);
+    };
+    
+
+
+}
+const guest1=new Guest('john',30)
+guest1.greet()
