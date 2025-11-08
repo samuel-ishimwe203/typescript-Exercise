@@ -40,5 +40,10 @@ function getStatus(status) {
     }
 }
 console.log(getStatus(StatusCode.BadRequest));
+// generics in typescript : it allows you to create the reusable and flexible code that can work with any type which helps to maintain code and safe.
+function identify(value) {
+    return value;
+}
+console.log(identify(200));
 export {};
 //# sourceMappingURL=enums.js.map

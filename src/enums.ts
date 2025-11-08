@@ -47,4 +47,11 @@ enum StatusCode {
     }
 
     console.log(getStatus(StatusCode.BadRequest))
+// generics in typescript : it allows you to create the reusable and flexible code that can work with any type which helps to maintain code and safe.
+
+function identify<T>(value:T):T{
+    return value
+}
+
+console.log(identify<number>(200))
     
