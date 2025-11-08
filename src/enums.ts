@@ -95,4 +95,14 @@ class Guest implements Person{
 const guest1=new Guest('john',34)
 guest1.greet()
 
+
 // Type casting :   it is way to tell the typescript compiler about the type of a variable when you have more information about the variable than the compiler does.
+
+let something:unknown='hello world'
+
+let leng=(something as string).length;
+console.log(leng);
+
+let input=document.getElementById('user-input') as HTMLInputElement;
+input.value='hi there'                  
+console.log(input.value);
