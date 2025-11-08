@@ -85,7 +85,7 @@ class Guest implements Person{
         this.name=name;
         this.age=age;
     }
-    greet(): void {
+    greet(): number | void {
         console.log(`hello my name is ${this.name} and my age is ${this.age}`);
     };
     
