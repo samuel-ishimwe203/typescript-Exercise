@@ -92,5 +92,5 @@ class Guest implements Person{
 
 
 }
-const guest1=new Guest('john',30)
+const guest1=new Guest('john',34)
 guest1.greet()
