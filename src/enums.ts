@@ -53,7 +53,7 @@ function identify<T>(value:T):T{
     return value
 }
 
-console.log(identify<number>(200))
+console.log(identify<number>(2090))
     
 // Interface : it is way to difine the structure or shape of an object in typescript , and what is properties , methods and their types.
 
