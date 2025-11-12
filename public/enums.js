@@ -44,7 +44,7 @@ console.log(getStatus(StatusCode.BadRequest));
 function identify(value) {
     return value;
 }
-console.log(identify(200));
+console.log(identify(2090));
 const person1 = {
     name: 'samuel',
     age: 22,
@@ -66,5 +66,29 @@ class Guest {
 }
 const guest1 = new Guest('john', 34);
 guest1.greet();
-export {};
+// Type casting :   it is way to tell the typescript compiler about the type of a variable when you have more information about the variable than the compiler does.
+let something = 'hello world';
+let leng = something.length;
+console.log(leng);
+let input = document.getElementById('user-input');
+input.value = 'hi there';
+console.log(input.value);
+;
+export const users = [
+    {
+        name: 'Max Mustermann',
+        age: 25,
+        occupation: 'Chimney sweep'
+    },
+    {
+        name: 'Kate Müller',
+        age: 23,
+        occupation: 'Astronaut'
+    }
+];
+export function logPerson(user) {
+    console.log(` - ${user.name}, ${user.age}, ${user.occupation}`);
+}
+console.log('Users:');
+users.forEach(logPerson);
 //# sourceMappingURL=enums.js.map
