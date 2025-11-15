@@ -301,3 +301,7 @@ users.forEach(logPerson);
 
 // console.log('Users:');
 // persons.filter(isUser).forEach(logPerson);
+
+
+// typescript allows to change variable from one type to another type this process called type assertion.
+
