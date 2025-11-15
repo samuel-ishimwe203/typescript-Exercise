@@ -29,7 +29,7 @@ let funct;
 funct = (name, greeting) => {
     console.log(`${name} says ${greeting}`);
 };
-funct('sameul', 'hello my friend');
+funct('sameul', 'hello my friends');
 // Example 2
 let calcu;
 calcu = (numOne, numTwo, action) => {
@@ -47,6 +47,6 @@ let logDetail;
 logDetail = (sam) => {
     console.log(`${sam.name} is ${sam.age} years old`);
 };
-logDetail({ name: 'samuel', age: 44 });
+logDetail({ name: 'samuel', age: 34 });
 export {};
 //# sourceMappingURL=sandbox.js.map
