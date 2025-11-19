@@ -31,12 +31,12 @@ function describeManagerEmployee(me) {
     return `${me.name} ID: ${me.employeeId}) manages a team of ${me.teamSize} people`;
 }
 console.log(describeManagerEmployee({ name: "Bob", employeeId: 123, teamSize: 5 }));
-function applyOperation(a, b, operation) {
-    return operation(a, b);
+function applyOperation(a, b, c, operation) {
+    return operation(a, b, c);
 }
-const add = (x, y) => x + y;
-const multiply = (x, y) => x * y;
-console.log(applyOperation(10, 5, add));
-console.log(applyOperation(10, 5, multiply));
+const add = (c, d, g) => c + d + g;
+const multiply = (c, d, g) => c * d * g;
+console.log(applyOperation(10, 5, 6, add));
+console.log(applyOperation(10, 5, 8, multiply));
 export {};
 //# sourceMappingURL=revision.js.map

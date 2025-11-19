@@ -84,15 +84,15 @@ console.log(describeManagerEmployee({ name: "Bob", employeeId: 123, teamSize: 5 
 
 
 
-type MathOperation = (a: number, b: number) => number;
+type MathOperation = (a: number, b: number, c:number) => number;
 
-function applyOperation(a: number, b: number, operation: MathOperation): number {
-    return operation(a, b);
+function applyOperation(a: number, b: number, c:number, operation: MathOperation): number {
+    return operation(a, b, c);
 }   
-const add: MathOperation = (x, y) => x + y;
-const multiply: MathOperation = (x, y) => x * y;
+const add: MathOperation = (c,d,g) => c + d+g;
+const multiply: MathOperation = (c, d,g) => c * d*g;
 
-console.log(applyOperation(10, 5, add));
-console.log(applyOperation(10, 5, multiply));
+console.log(applyOperation(10, 5,6, add));
+console.log(applyOperation(10, 5, 8,multiply));
 
       
