@@ -29,7 +29,7 @@ let funct;
 funct = (name, greeting) => {
     console.log(`${name} says ${greeting}`);
 };
-funct('sameul', 'hello my friends');
+funct('sameul', 'hello my friend');
 // Example 2
 let calcu;
 calcu = (numOne, numTwo, action) => {
