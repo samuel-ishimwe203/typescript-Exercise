@@ -5,3 +5,44 @@ function addNumbers( a:number , b:number){
 }
 
 console.log(addNumbers(5, 10));
+
+//Create a function that accepts either a string or a number as input and returns a message describing what type it received. Use union types to enforce this.
+// function describeInput(a:number, b:string){
+//     if(typeof a === "string"){
+//         console.log(`You provided a string : ${a}`);
+//     }
+//         else{
+//     console.log( `You provided a number: ${b}`);
+//         }
+    
+// }
+
+// describeInput("hello");
+
+// Create an interface called User with properties for name (string), age (number), and email (string). Then refactor the function below to add proper types for the parameters and return type
+
+interface User{
+    name: string
+     age: number, 
+     email: string 
+    }
+
+function introduceUser(user: User) {
+  return `Hello, my name is ${user.name}, I am ${user.age} years old, and my email is ${user.email}`;
+}
+
+console.log(introduceUser({name:" Alice",
+    age:28,
+    email:"alice@example.com"}));
+//  Create an enum called Status with values for "Active", "Inactive", and "Pending". Write a function that accepts a Status and returns a descriptive message based on the status value.
+
+enum Status{
+    Active = "Active",
+    Inactive = "Inactive",
+    Pending = "Pending"
+}
+function getStatusMessage(status: Status):string{ 
+   return `The current status is: ${status}`;
+}
+
+console.log(getStatusMessage(Status.Active));
