@@ -19,6 +19,13 @@ var Status;
 function getStatusMessage(status) {
     return `The current status is: ${status}`;
 }
-console.log(getStatusMessage(Status.Active));
+console.log(getStatusMessage(Status.Pending));
+/*Create a generic function called getFirstElement that accepts an array of any type and returns the first element. The return type should match the input array's element type.*/
+function getFirstElement(arr) {
+    return arr[0];
+}
+console.log(getFirstElement([1, 2, 3]));
+console.log(getFirstElement(["a", "b", "c"]));
+console.log(getFirstElement([{ id: 1 }, { id: 2 }]));
 export {};
 //# sourceMappingURL=revision.js.map
