@@ -95,4 +95,31 @@ const multiply: MathOperation = (c, d,) => c * d;
 console.log(applyOperation(10, 5, add));
 console.log(applyOperation(10, 5,multiply));
 
-      
+ // debug the following code without changing the core implementation
+ 
+ interface Car{
+    brand:string,
+    model?:string,
+    price?:number,
+ }
+
+ function printCarModel (car:Car){
+    if(car.model){
+        console.log(car.model.toUpperCase());
+    }
+    else{
+            console.log("no model provided");
+    };
+
+    if(car.price !==undefined){
+
+           console.log(car.price.toFixed(2));
+
+    }
+
+    
+    
+    
+ 
+ }
+ printCarModel({brand:"Toyota", price:3000,model:"suzuk"});

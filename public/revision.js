@@ -38,5 +38,18 @@ const add = (c, d) => c + d;
 const multiply = (c, d) => c * d;
 console.log(applyOperation(10, 5, add));
 console.log(applyOperation(10, 5, multiply));
+function printCarModel(car) {
+    if (car.model) {
+        console.log(car.model.toUpperCase());
+    }
+    else {
+        console.log("no model provided");
+    }
+    ;
+    if (car.price !== undefined) {
+        console.log(car.price.toFixed(2));
+    }
+}
+printCarModel({ brand: "Toyota", price: 3000 });
 export {};
 //# sourceMappingURL=revision.js.map
