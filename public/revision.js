@@ -133,5 +133,20 @@ function getUser(user) {
     return `my name is ${user.name} and i have ${user.age} years old and this is my email: ${user.email}`;
 }
 console.log(getUser({ name: "samuel", age: 22, email: "samuelishimw02@gmail.com" }));
+/*
+     Create an enum called Status with values for "Active", "Inactive", and "Pending".
+     Write a function that accepts a Status and returns a descriptive message based on the status value.
+*/
+var Status;
+(function (Status) {
+    Status["Active"] = "Active kbas";
+    Status["InActive"] = "InActive";
+    Status["Pending"] = "Pending";
+})(Status || (Status = {}));
+function getMessage(sta) {
+    return `The item is currently : ${sta}`;
+}
+console.log(getMessage(Status.Active));
+console.log(getMessage(Status.Pending));
 export {};
 //# sourceMappingURL=revision.js.map
