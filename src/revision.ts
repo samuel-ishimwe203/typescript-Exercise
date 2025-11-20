@@ -233,7 +233,41 @@ proccesse("hello");
 proccesse(32);
 proccesse(false);
 proccesse(undefined);
-proccesse(null);
+
+//Type the function parameter accordingly
+
+interface Ingredient{
+    name:string;
+    quantity:number | string;
+    price?:number;
+}
+
+interface Users{
+    title:string;
+    ingredients:Ingredient[];
+    instructions:string;
+}
+const processRecipe = (recipe: Users) => {
+  console.log(recipe.ingredients);
+};
+
+processRecipe({
+  title: 'Chocolate Chip Cookies',
+  ingredients: [
+    { name: 'Flour', quantity: 4 },
+    { name: 'Sugar', quantity: '1 cup', price: 5 },
+  ],
+  instructions: ""
+});
+
+
+
+
+
+
+ 
+
+
 
 
 
