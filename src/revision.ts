@@ -248,7 +248,7 @@ interface Users{
     instructions:string;
 }
 const processRecipe = (recipe: Users) => {
-  console.log(recipe.title);
+  console.log(recipe.ingredients);
 };
 
 processRecipe({

@@ -199,7 +199,7 @@ proccesse("hello");
 proccesse(32);
 proccesse(false);
 const processRecipe = (recipe) => {
-    console.log(recipe.title);
+    console.log(recipe.ingredients);
 };
 processRecipe({
     title: 'Chocolate Chip Cookies',
