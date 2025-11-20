@@ -129,5 +129,9 @@ function numString(strOrNum) {
 }
 console.log(numString("hello"));
 console.log(numString(23));
+function getUser(user) {
+    return `my name is ${user.name} and i have ${user.age} years old and this is my email: ${user.email}`;
+}
+console.log(getUser({ name: "samuel", age: 22, email: "samuelishimw02@gmail.com" }));
 export {};
 //# sourceMappingURL=revision.js.map

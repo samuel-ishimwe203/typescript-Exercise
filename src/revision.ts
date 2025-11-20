@@ -138,4 +138,18 @@ function numString( strOrNum: string | number ){
 console.log(numString("hello"));
 console.log(numString(23));
 
-//
+/*
+Create an interface called User with properties for name 
+(string), age (number), and email (string). Then refactor 
+the function below to add proper types for the parameters */
+
+interface User{
+    name:string, 
+    age:number,
+    email:string
+}
+
+function getUser(user:User){
+    return `my name is ${user.name} and i have ${user.age} years old and this is my email: ${user.email}`;
+}
+console.log(getUser({name:"samuel", age:22, email:"samuelishimw02@gmail.com"}));
