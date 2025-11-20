@@ -322,6 +322,57 @@ logOrder({
   }
 });
 
+
+
+// Debug the following  TypeScript Code Without Changing the Core Implementation
+
+interface Car {
+    brand: string;
+    model?: string;
+    price?: number;
+}
+
+function printCarModewl(car: Car) {
+    if(car.model){
+  console.log(car.model.toUpperCase());
+    }else{
+     console.log('no model here');
+    }
+     if(car.price !==undefined){
+     console.log(car.price.toFixed(2));
+     }
+     else{
+        
+     }
+   
+   
+}
+
+printCarModel({ brand: "Toyota" , price: '3000'});
+
+
+
+interface Car {
+    brand: string;
+    model?: string;
+    price?: number;
+}
+
+function printCarModel(car: Car) {
+    if (car.model) {
+        console.log(car.model.toUpperCase());
+    } else {
+        console.log('no model here');
+    }
+
+    if (car.price !== undefined) {
+        console.log(car.price.toFixed(2));
+    }
+}
+
+printCarModel({ brand: "Toyota", price: 3000 });
+printCarModel({ brand: "Honda" });
+
  
 
 
