@@ -183,3 +183,22 @@ function generi<T>(item:T[]):T |  undefined {
 
 console.log(generi([3,4,5,6]));
 console.log(generi(["A","G","T"]));
+
+
+/*
+solve typing issues
+*/
+
+class Counter {
+  count = 0;
+
+  increment() {
+    this.count++;
+  }
+
+  static getCount(this:any) { // because static method does not have access to instance propertiesv
+    return this.count; 
+  }
+}
+
+
