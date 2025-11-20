@@ -209,5 +209,61 @@ processRecipe({
     ],
     instructions: ""
 });
+// Update the function definition so that all tests pass
+function move(direction, distance) { }
+// TESTS
+move('up', 10);
+move('left', 5);
+move(
+// @ts-expect-error - "up-right" is not a valid direction
+'up-right', 10);
+move(
+// @ts-expect-error - "down-left" is not a valid direction
+'down-left', 20);
+move('up', 
+// @ts-expect-error - "20" is not a valid distance
+'20');
+const logOrder = (order) => {
+    console.log(`Shipping to: ${order.customer.address.city}`);
+};
+logOrder({
+    customer: {
+        name: 'Jane',
+        // address is missing
+        address: {
+            city: "Nyagatare"
+        }
+    }
+});
+function printCarModewl(car) {
+    if (car.model) {
+        console.log(car.model.toUpperCase());
+    }
+    else {
+        console.log('no model here');
+    }
+    if (car.price !== undefined) {
+        console.log(car.price.toFixed(2));
+    }
+    else {
+    }
+}
+function printCarModel(car) {
+    if (car.model) {
+        console.log(car.model.toUpperCase());
+    }
+    else {
+        console.log('no model here');
+    }
+    if (car.price !== undefined) {
+        console.log(car.price.toFixed(2));
+    }
+}
+printCarModel({ brand: "Toyota", price: 3000 });
+printCarModel({ brand: "Honda" });
+function getLastElement(obj1, obj2) {
+    return [obj1, obj2];
+}
+console.log(getLastElement({ name: 'sameul', age: 22, location: 'Rwanda' }, { title: 'task1', description: 'do something', completed: false }));
 export {};
 //# sourceMappingURL=revision.js.map

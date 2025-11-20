@@ -348,7 +348,7 @@ function printCarModewl(car: Car) {
    
 }
 
-printCarModel({ brand: "Toyota" , price: '3000'});
+// printCarModel({ brand: "Toyota" , price: '3000'});
 
 
 
@@ -372,6 +372,29 @@ function printCarModel(car: Car) {
 
 printCarModel({ brand: "Toyota", price: 3000 });
 printCarModel({ brand: "Honda" });
+
+
+// generic function to get last element of an array
+
+interface Item{
+    name:string;
+    age:number;
+    location:string;
+     
+}
+
+interface Tasks{
+    title:string;
+    description:string;
+    completed:boolean;
+}
+
+function getLastElement <T extends Item , U extends Tasks>(obj1:T , obj2:U){
+    return [obj1, obj2]
+} 
+
+
+console.log(getLastElement({name:'sameul', age:22, location:'Rwanda'}, {title:'task1',description:'do something', completed:false}));   
 
  
 
