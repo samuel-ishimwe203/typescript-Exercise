@@ -232,7 +232,7 @@ function proccesse(item: string | number | boolean | null | undefined ){
 proccesse("hello");
 proccesse(32);
 proccesse(false);
-proccesse(undefined);
+
 
 //Type the function parameter accordingly
 
@@ -248,7 +248,7 @@ interface Users{
     instructions:string;
 }
 const processRecipe = (recipe: Users) => {
-  console.log(recipe.ingredients);
+  console.log(recipe.title);
 };
 
 processRecipe({

@@ -198,7 +198,16 @@ function proccesse(item) {
 proccesse("hello");
 proccesse(32);
 proccesse(false);
-proccesse(undefined);
-proccesse(null);
+const processRecipe = (recipe) => {
+    console.log(recipe.title);
+};
+processRecipe({
+    title: 'Chocolate Chip Cookies',
+    ingredients: [
+        { name: 'Flour', quantity: 4 },
+        { name: 'Sugar', quantity: '1 cup', price: 5 },
+    ],
+    instructions: ""
+});
 export {};
 //# sourceMappingURL=revision.js.map
