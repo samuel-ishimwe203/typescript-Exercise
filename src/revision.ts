@@ -170,3 +170,16 @@ function getMessage(sta:Status){
 }
 console.log(getMessage(Status.Active));
 console.log(getMessage(Status.Pending));
+
+/*
+   Create a generic function called getFirstElement that accepts an array of any type 
+    returns the first element. The return type should match the input array's element type.
+*/
+
+function generi<T>(item:T[]):T |  undefined {
+
+    return item[2];
+}
+
+console.log(generi([3,4,5,6]));
+console.log(generi(["A","G","T"]));
