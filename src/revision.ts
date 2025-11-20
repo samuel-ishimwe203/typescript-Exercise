@@ -206,6 +206,35 @@ class Counter {
 function identity<T>(value: T): T {
     return value;
 }
-console.log(identity<number>(42));                          
+console.log(identity<number>(42));   
+
+/*
+Write a TypeScript function processValue that takes string | number | boolean | null | undefined,
+ uses type guards to log uppercase strings, numbers fixed to two decimals, and boolean as
+ "True"/"False,” and throws an error for null or undefined, including a type assertion to narrow the type.
+*/
+
+function proccesse(item: string | number | boolean | null | undefined ){
+    if(typeof item==="string"){
+        console.log(item.toUpperCase());
+    }
+    else if(typeof item==="number"){
+        console.log(item.toFixed(2));
+
+    } else if(typeof item === 'boolean'){
+        console.log(item)
+    }else{
+        throw Error ("this is error because it is null or undefined");
+    }
+    
+}
+
+proccesse("hello");
+proccesse(32);
+proccesse(false);
+proccesse(undefined);
+proccesse(null);
+
+
 
 

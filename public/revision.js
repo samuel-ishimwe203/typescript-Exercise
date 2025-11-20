@@ -157,5 +157,48 @@ function generi(item) {
 }
 console.log(generi([3, 4, 5, 6]));
 console.log(generi(["A", "G", "T"]));
+/*
+solve typing issues
+*/
+class Counter {
+    constructor() {
+        this.count = 0;
+    }
+    increment() {
+        this.count++;
+    }
+    static getCount() {
+        return this.count;
+    }
+}
+//  Write a generic function identity that returns the value it receives without changing the type.
+function identity(value) {
+    return value;
+}
+console.log(identity(42));
+/*
+Write a TypeScript function processValue that takes string | number | boolean | null | undefined,
+ uses type guards to log uppercase strings, numbers fixed to two decimals, and boolean as
+ "True"/"False,” and throws an error for null or undefined, including a type assertion to narrow the type.
+*/
+function proccesse(item) {
+    if (typeof item === "string") {
+        console.log(item.toUpperCase());
+    }
+    else if (typeof item === "number") {
+        console.log(item.toFixed(2));
+    }
+    else if (typeof item === 'boolean') {
+        console.log(item);
+    }
+    else {
+        throw Error("this is error because it is null or undefined");
+    }
+}
+proccesse("hello");
+proccesse(32);
+proccesse(false);
+proccesse(undefined);
+proccesse(null);
 export {};
 //# sourceMappingURL=revision.js.map
