@@ -1,4 +1,4 @@
-//Create a function that takes two numbers as parameters and returns their sum. Ensure proper type annotations for parameters and return type.
+/*//Create a function that takes two numbers as parameters and returns their sum. Ensure proper type annotations for parameters and return type.
  
 function addNumbers( a:number , b:number){
     return a+b;
@@ -6,20 +6,6 @@ function addNumbers( a:number , b:number){
 
 console.log(addNumbers(5, 10));
 
-//Create a function that accepts either a string or a number as input and returns a message describing what type it received. Use union types to enforce this.
-// function describeInput(a:number, b:string){
-//     if(typeof a === "string"){
-//         console.log(`You provided a string : ${a}`);
-//     }
-//         else{
-//     console.log( `You provided a number: ${b}`);
-//         }
-    
-// }
-
-// describeInput("hello");
-
-// Create an interface called User with properties for name (string), age (number), and email (string). Then refactor the function below to add proper types for the parameters and return type
 
 interface User{
     name: string
@@ -47,7 +33,7 @@ function getStatusMessage(status: Status):string{
 
 console.log(getStatusMessage(Status.Pending));
 
-/*Create a generic function called getFirstElement that accepts an array of any type and returns the first element. The return type should match the input array's element type.*/
+Create a generic function called getFirstElement that accepts an array of any type and returns the first element. The return type should match the input array's element type.
 
 function getFirstElement<D>(arr: D[]): D | undefined {
     return arr[0];
@@ -122,4 +108,20 @@ console.log(applyOperation(10, 5,multiply));
     
  
  }
- printCarModel({brand:"Toyota", price:3000,model:"suzuk"});
+ printCarModel({brand:"Toyota", price:3000}); */
+
+
+
+ // Create a function that takes two numbers as parameters and returns their sum. Ensure proper type annotations for parameters and return type.
+
+ function sum(a:number, b:number){
+    return a+b;
+ }
+
+ console.log(sum(5, 10));
+console.log(sum(5, 10.5));
+
+/*
+   Create a function that accepts either a string or a number as 
+   input and returns a message describing what type it received. Use union types to enforce this.
+*/
