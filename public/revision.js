@@ -115,5 +115,19 @@ function sum(a, b) {
 }
 console.log(sum(5, 10));
 console.log(sum(5, 10.5));
+/*
+   Create a function that accepts either a string or a number as
+   input and returns a message describing what type it received. Use union types to enforce this.
+*/
+function numString(strOrNum) {
+    if (typeof strOrNum === "string") {
+        return `You provide string ${strOrNum}`;
+    }
+    else {
+        return `You provide number : ${strOrNum}`;
+    }
+}
+console.log(numString("hello"));
+console.log(numString(23));
 export {};
 //# sourceMappingURL=revision.js.map
