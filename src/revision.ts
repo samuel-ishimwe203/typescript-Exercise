@@ -416,7 +416,7 @@ Create a type for direction that accepts only "north", "south", "east", or "west
 a direction and returns coordinates representing movement in that direction.
 */
 
-function move(direction: "north"| "south" | "east" | "west"){
+function moves(direction: "north"| "south" | "east" |"west"){
     switch(direction){
         case "north":
             return {x:0,y:1};
@@ -426,12 +426,11 @@ function move(direction: "north"| "south" | "east" | "west"){
                     return {x:1, y:0 };
                     case "west":
                         return {x:-1, y:0}
-                        default:
-                            
 
     }
 }
-console.log(move("north"));
+
+console.log(moves("north"));
 
 
 
