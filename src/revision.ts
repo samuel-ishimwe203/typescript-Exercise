@@ -434,6 +434,18 @@ function moves(direction: "north"| "south" | "east" |"west"){
 console.log(moves("north"));
 
 
+//
+
+
+type UserTuple = [name:string, age:number, active:boolean];
+
+function formatUserTuple(user: UserTuple): string {
+  const [name, age, active] = user;
+  return `${name} is ${age} years old and is ${active ? "active" : "inactive"}`;
+}
+console.log(formatUserTuple(["Alice", 30, true]));
+
+
 
 
 
