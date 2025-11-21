@@ -409,9 +409,27 @@ const config:Config={
     timeout:5000,
 }
 
-
 console.log(config);
 
+/*
+Create a type for direction that accepts only "north", "south", "east", or "west". Write a function that takes 
+a direction and returns coordinates representing movement in that direction.
+*/
+
+function move(direction: "north"| "south" | "east" | "west"){
+    switch(direction){
+        case "north":
+            return {x:0,y:1};
+            case "south":
+                return {x:0, y:-1};
+                case "east":
+                    return {x:1, y:0 };
+                    case "west":
+                        return {x:-1, y:0}
+
+    }
+}
+console.log(move("north"));
 
 
 
