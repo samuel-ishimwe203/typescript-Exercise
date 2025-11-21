@@ -434,7 +434,8 @@ function moves(direction: "north"| "south" | "east" |"west"){
 console.log(moves("north"));
 
 
-//
+/*Create a function that represents a user as a tuple with [name: string, age: number, active: boolean]. 
+Write a function that destructures this tuple and returns a formatted string.*/
 
 
 type UserTuple = [name:string, age:number, active:boolean];
@@ -445,6 +446,36 @@ function formatUserTuple(user: UserTuple): string {
 }
 console.log(formatUserTuple(["Alice", 30, true]));
 
+
+/* 
+ 
+*/
+interface Product {
+    name?: string;
+    price: number;
+}
+function calculateTotal(items:Product[]) {
+  let total = 0;
+  for (let item of items) {
+    total += item.price;
+  }
+  return total.toFixed(2);
+}
+
+function applyDiscount(amount:number, discount:number) {
+  const discountedAmount = amount - (amount * discount);
+  return discountedAmount;
+}
+
+const products = [
+  { name: "Laptop", price: 999 },
+  { name: "Mouse", price: 25 },
+  { name: "Keyboard", price: 79 }
+];
+
+const total = calculateTotal(products);
+console.log(`Total: $${total}`);
+// const discounted = applyDiscount(total, 0.1);
 
 
 
