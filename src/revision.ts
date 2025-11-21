@@ -426,6 +426,8 @@ function move(direction: "north"| "south" | "east" | "west"){
                     return {x:1, y:0 };
                     case "west":
                         return {x:-1, y:0}
+                        default:
+                            
 
     }
 }
