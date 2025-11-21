@@ -396,7 +396,21 @@ function getLastElement <T extends Item , U extends Tasks>(obj1:T , obj2:U){
 
 console.log(getLastElement({name:'sameul', age:22, location:'Rwanda'}, {title:'task1',description:'do something', completed:false}));   
 
- 
+ /*Create an interface Config with readonly properties for apiUrl (string) 
+ and timeout (number). Demonstrate that these properties cannot be modified after creation.*/
+
+interface Config{
+    readonly apiUrl:string;
+    readonly timeout:number;
+}
+
+const config:Config={
+    apiUrl:"http//example.com",
+    timeout:5000,
+}
+
+
+console.log(config);
 
 
 

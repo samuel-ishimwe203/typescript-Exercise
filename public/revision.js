@@ -265,5 +265,10 @@ function getLastElement(obj1, obj2) {
     return [obj1, obj2];
 }
 console.log(getLastElement({ name: 'sameul', age: 22, location: 'Rwanda' }, { title: 'task1', description: 'do something', completed: false }));
+const config = {
+    apiUrl: "http//example.com",
+    timeout: 5000,
+};
+console.log(config);
 export {};
 //# sourceMappingURL=revision.js.map
