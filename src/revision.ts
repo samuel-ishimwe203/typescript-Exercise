@@ -470,11 +470,13 @@ function applyDiscount(amount:number, discount:number) {
 const products = [
   { name: "Laptop", price: 999 },
   { name: "Mouse", price: 25 },
-  { name: "Keyboard", price: 79 }
+  { name: "Keyboard", price: 78 }
 ];
 
 const total = calculateTotal(products);
 console.log(`Total: $${total}`);
+
+
 // const discounted = applyDiscount(total, 0.1);
 
 
