@@ -455,7 +455,7 @@ interface Product {
     price: number;
 }
 function calculateTotal(items:Product[]) {
-  let total = 1;
+  let total = 0;
   for (let item of items) {
     total += item.price;
   }
