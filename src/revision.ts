@@ -477,7 +477,17 @@ const total = calculateTotal(products);
 console.log(`Total: $${total}`);
 
 
-// const discounted = applyDiscount(total, 0.1);
+// to use the keyof operator
+
+interface Person{
+    name:string;
+    age:number;
+}
+
+type keyofPerson= keyof Person;
+
+const perso:keyofPerson='name';
+console.log(perso)
 
 
 

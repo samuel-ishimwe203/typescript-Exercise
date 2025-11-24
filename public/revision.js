@@ -291,7 +291,7 @@ function formatUserTuple(user) {
     const [name, age, active] = user;
     return `${name} is ${age} years old and is ${active ? "active" : "inactive"}`;
 }
-console.log(formatUserTuple(["Alice", 30, true]));
+console.log(formatUserTuple(["Alice", 3, true]));
 function calculateTotal(items) {
     let total = 0;
     for (let item of items) {
@@ -305,10 +305,12 @@ function applyDiscount(amount, discount) {
 }
 const products = [
     { name: "Laptop", price: 999 },
-    { name: "Mouse", price: 25 },
-    { name: "Keyboard", price: 79 }
+    { name: "Mouse", price: 26 },
+    { name: "Keyboard", price: 78 }
 ];
 const total = calculateTotal(products);
+console.log(`Total: $${total}`);
+const perso = 'name';
+console.log(perso);
 export {};
-// const discounted = applyDiscount(total, 0.1);
 //# sourceMappingURL=revision.js.map
