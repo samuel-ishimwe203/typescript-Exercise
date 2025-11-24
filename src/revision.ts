@@ -444,7 +444,7 @@ function formatUserTuple(user: UserTuple): string {
   const [name, age, active] = user;
   return `${name} is ${age} years old and is ${active ? "active" : "inactive"}`;
 }
-console.log(formatUserTuple(["Alice", 38, true]));
+console.log(formatUserTuple(["Alice", 3, true]));
 
 
 /* 
