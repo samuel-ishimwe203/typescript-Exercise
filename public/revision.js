@@ -312,5 +312,15 @@ const total = calculateTotal(products);
 console.log(`Total: $${total}`);
 const perso = 'name';
 console.log(perso);
+function getCar(obj, key) {
+    return obj[key];
+}
+const car = {
+    brand: 'banz',
+    year: 2020,
+    prices: 2000000
+};
+const carBrand = getCar(car, 'brand');
+console.log(carBrand);
 export {};
 //# sourceMappingURL=revision.js.map

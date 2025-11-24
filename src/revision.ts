@@ -490,5 +490,29 @@ const perso:keyofPerson='name';
 console.log(perso)
 
 
+// also keyof operator
+
+interface Car{
+    brand:string;
+    year?:number;
+    prices?:number
+}
+
+
+function getCar<T, K extends keyof T>(obj:T, key:K):T[K]{
+    return obj[key];
+
+}
+
+const car:Car={
+    brand:'banz',
+    year:2020,
+    prices:2000000
+}
+
+const carBrand:string= getCar(car, 'brand');
+console.log(carBrand);
+
+
 
 
