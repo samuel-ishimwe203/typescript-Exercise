@@ -538,6 +538,24 @@ type carName= Cars extends name? String : any;
 const ca:carName='vigo'
 console.log(ca)
 
+// to create custom mapped
+
+type person={
+    name:string;
+    age:string
+}
+
+type BoalenFy<T>={
+    [P in keyof T]:boolean;
+}
+
+const thi:BoalenFy<person>={
+    name:true,
+    age:true
+}
+
+console.log(thi)
+
 
 
 
