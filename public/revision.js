@@ -322,5 +322,9 @@ const car = {
 };
 const carBrand = getCar(car, 'brand');
 console.log(carBrand);
+let result = 'Kigali';
+console.log(result);
+const ca = 'vigo';
+console.log(ca);
 export {};
 //# sourceMappingURL=revision.js.map

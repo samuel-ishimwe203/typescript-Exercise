@@ -524,6 +524,20 @@ type accesse= MyUser['location'];
 let result :accesse='Kigali'
 console.log(result)
 
+// conditional type 
+
+type Cars={
+    name:string,
+    price:number
+
+}
+
+type name= {name:string}
+type carName= Cars extends name? String : any;
+
+const ca:carName='vigo'
+console.log(ca)
+
 
 
 
