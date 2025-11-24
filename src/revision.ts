@@ -513,6 +513,17 @@ const car:Car={
 const carBrand:string= getCar(car, 'brand');
 console.log(carBrand);
 
+// indexed accessed type 
+
+interface MyUser{
+    name:string;
+    location:string;
+}
+
+type accesse= MyUser['location'];
+let result :accesse='Kigali'
+console.log(result)
+
 
 
 
