@@ -469,7 +469,7 @@ function applyDiscount(amount:number, discount:number) {
 
 const products = [
   { name: "Laptop", price: 999 },
-  { name: "Mouse", price: 25 },
+  { name: "Mouse", price: 26 },
   { name: "Keyboard", price: 78 }
 ];
 
