@@ -326,5 +326,10 @@ let result = 'Kigali';
 console.log(result);
 const ca = 'vigo';
 console.log(ca);
+const thi = {
+    name: true,
+    age: true
+};
+console.log(thi);
 export {};
 //# sourceMappingURL=revision.js.map
