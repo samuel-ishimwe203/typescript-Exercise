@@ -507,7 +507,7 @@ function getCar<T, K extends keyof T>(obj:T, key:K):T[K]{
 const car:Car={
     brand:'banz',
     year:2020,
-    prices:2000000
+    prices:20000000
 }
 
 const carBrand:string= getCar(car, 'brand');
