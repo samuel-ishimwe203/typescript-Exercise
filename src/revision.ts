@@ -230,7 +230,7 @@ function proccesse(item: string | number | boolean | null | undefined ){
 }
 
 proccesse("hello");
-proccesse(32);
+proccesse(36);
 proccesse(false);
 
 
