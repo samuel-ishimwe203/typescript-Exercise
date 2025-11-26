@@ -214,7 +214,7 @@ Write a TypeScript function processValue that takes string | number | boolean | 
  "True"/"False,” and throws an error for null or undefined, including a type assertion to narrow the type.
 */
 
-function proccesse(item: string | number | boolean | null | undefined ){
+function proccesse(item: string | numbe | boolean | null | undefined ){
     if(typeof item==="string"){
         console.log(item.toUpperCase());
     }
