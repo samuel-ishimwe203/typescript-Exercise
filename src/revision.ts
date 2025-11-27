@@ -219,7 +219,7 @@ function proccesse(item: string | number | boolean| null | undefined ){
         console.log(item.toUpperCase());
     }
     else if(typeof item==="number"){
-        console.log(item.toFixed(4));
+        console.log(item.toFixed(44));
 
     } else if(typeof item === 'boolean'){
         console.log(item)
