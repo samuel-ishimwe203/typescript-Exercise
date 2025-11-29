@@ -219,7 +219,7 @@ function proccesse(item: string | number | boolean| null | undefined ){
         console.log(item.toUpperCase());
     }
     else if(typeof item==="number"){
-        console.log(item.toFixed(4s));
+        console.log(item.toFixed(4));
 
     } else if(typeof item === 'boolean'){
         console.log(item)
@@ -558,4 +558,8 @@ console.log(thi)
 
 
 
-
+// how type assertion works
+// by as 
+let value:any =5;
+let results=(value as number);
+console.log(typeof results);

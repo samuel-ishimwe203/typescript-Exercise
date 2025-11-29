@@ -186,7 +186,7 @@ function proccesse(item) {
         console.log(item.toUpperCase());
     }
     else if (typeof item === "number") {
-        console.log(item.toFixed(2));
+        console.log(item.toFixed(4));
     }
     else if (typeof item === 'boolean') {
         console.log(item);
@@ -196,7 +196,7 @@ function proccesse(item) {
     }
 }
 proccesse("hello");
-proccesse(32);
+proccesse(3);
 proccesse(false);
 const processRecipe = (recipe) => {
     console.log(recipe.ingredients);
@@ -318,7 +318,7 @@ function getCar(obj, key) {
 const car = {
     brand: 'banz',
     year: 2020,
-    prices: 2000000
+    prices: 20000000
 };
 const carBrand = getCar(car, 'brand');
 console.log(carBrand);
@@ -331,5 +331,10 @@ const thi = {
     age: true
 };
 console.log(thi);
+// how type assertion works
+// by as 
+let value = 5;
+let results = value;
+console.log(typeof results);
 export {};
 //# sourceMappingURL=revision.js.map
