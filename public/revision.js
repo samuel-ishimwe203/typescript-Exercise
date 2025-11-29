@@ -333,8 +333,12 @@ const thi = {
 console.log(thi);
 // how type assertion works
 // by as 
-let value = 5;
+let value = "hello";
 let results = value;
-console.log(typeof results);
+console.log(results.toUpperCase());
+// type casting 
+let age = "25";
+let age2 = Number(age);
+console.log(age2 + 5);
 export {};
 //# sourceMappingURL=revision.js.map

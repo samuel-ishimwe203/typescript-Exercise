@@ -560,6 +560,12 @@ console.log(thi)
 
 // how type assertion works
 // by as 
-let value:any =5;
-let results=(value as number);
-console.log(typeof results);
+let value:any ="hello";
+let results=(value as string)
+console.log(results.toUpperCase())
+
+// type casting 
+
+let age:string="25";
+let age2:number=Number(age)
+console.log(age2 +5);
