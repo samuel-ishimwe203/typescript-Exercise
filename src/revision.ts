@@ -569,3 +569,23 @@ console.log(results.toUpperCase())
 let age:string="25";
 let age2:number=Number(age)
 console.log(age2 +5);
+
+interface Items{
+    nema:string; 
+    age:number;
+    
+
+}
+
+interface items2{
+    location:string;
+    price:number;
+}
+
+type combine= Items | items2;
+function display(item:combine){
+    if('location'in item){
+        console.log(item.location.toUpperCase());
+    }
+    
+}

@@ -340,5 +340,10 @@ console.log(results.toUpperCase());
 let age = "25";
 let age2 = Number(age);
 console.log(age2 + 5);
+function display(item) {
+    if ('location' in item) {
+        console.log(item.location.toUpperCase());
+    }
+}
 export {};
 //# sourceMappingURL=revision.js.map
