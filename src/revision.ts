@@ -533,3 +533,15 @@ function getStatusMessage(status:Status) {
   return `the process is :${status}`
 }
 console.log(getStatusMessage(Status.InActive))
+
+// 
+
+function getFirstElement<T>(arr:T[]){
+
+  return arr[0];
+
+}
+
+console.log(getFirstElement([1, 2, 3]))
+console.log(getFirstElement(["a","b","c"]))
+
