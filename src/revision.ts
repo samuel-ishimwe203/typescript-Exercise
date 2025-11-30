@@ -504,31 +504,80 @@
 
 //
 
-interface Address{
-    city:string;
-    street?:string;
+// interface Address{
+//     city:string;
+//     street?:string;
     
+// }
+
+// interface Customer{
+//     name:string;
+//     address:Address
+// }
+// interface Order{
+//     customer:Customer;
+// }
+// const logOrder = (order: Order) => {
+//   console.log(`${order.customer.name} is Shipping to: ${order.customer.address.city}`);
+// };
+
+// logOrder({
+//   customer: {
+//     name: 'Jane',
+
+//     address:{
+
+//         city:'kigali',
+//     },
+    
+//   }
+// });
+
+
+//
+
+
+function move(direction: 'up'| 'down'|'left'|'right', distance:number) {}
+
+// TESTS
+
+move('up', 10);
+move('left', 5);
+
+move(
+  // @ts-expect-error - "up-right" is not a valid direction
+  'up-right',
+  10
+);
+
+move(
+  // @ts-expect-error - "down-left" is not a valid direction
+  'down-left',
+  20
+);
+
+move(
+  'up',
+  // @ts-expect-error - "20" is not a valid distance
+  '20'
+);
+
+
+interface Ingredient{
+    title:string;
+    ingredients:{};
+    instructions:string;
 }
 
-interface Customer{
-    name:string;
-    address:Address
-}
-interface Order{
-    customer:Customer;
-}
-const logOrder = (order: Order) => {
-  console.log(`${order.customer.name} is Shipping to: ${order.customer.address.city}`);
+const processRecipe = (recipe: Ingredient) => {
+  console.log(recipe.ingredients);
 };
 
-logOrder({
-  customer: {
-    name: 'Jane',
-
-    address:{
-
-        city:'kigali',
-    },
-    
-  }
+processRecipe({
+  title: 'Chocolate Chip Cookies',
+  ingredients: [
+    { name: 'Flour', quantity: 4 },
+    { name: 'Sugar', quantity: '1 cup', price: 5 },
+  ],
+  instructions: '...',
 });
