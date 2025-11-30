@@ -478,26 +478,57 @@
 // }
 
 
-interface Car {
-    brand: string;
-    model?: string;
-    price?: number;
-}
+// interface Car {
+//     brand: string;
+//     model?: string;
+//     price?: number;
+// }
 
-function printCarModel(car: Car) {
+// function printCarModel(car: Car) {
     
-    if(car.model){
-          console.log(car.model.toUpperCase());
+//     if(car.model){
+//           console.log(car.model.toUpperCase());
 
-    }else {
-        console.log('no model here')
-    }
+//     }else {
+//         console.log('no model here')
+//     }
 
-    if(car.price !== undefined){
-        console.log(car.price.toFixed(2));
-    }
+//     if(car.price !== undefined){
+//         console.log(car.price.toFixed(2));
+//     }
   
    
+// }
+
+// printCarModel({ brand: "Toyota" , price: 3000});
+
+//
+
+interface Address{
+    city:string;
+    street?:string;
+    
 }
 
-printCarModel({ brand: "Toyota" , price: 3000});
+interface Customer{
+    name:string;
+    address:Address
+}
+interface Order{
+    customer:Customer;
+}
+const logOrder = (order: Order) => {
+  console.log(`${order.customer.name} is Shipping to: ${order.customer.address.city}`);
+};
+
+logOrder({
+  customer: {
+    name: 'Jane',
+
+    address:{
+
+        city:'kigali',
+    },
+    
+  }
+});
