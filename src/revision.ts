@@ -557,3 +557,40 @@ const multiply = (x:number, y:number) => x * y;
 
 console.log(applyOperation(5, 10, add));
 console.log(applyOperation(5, 10, multiply));
+//
+
+
+type Value=string|number| boolean;
+function processValue(value:Value) {
+  
+  if(typeof value==='string'){
+    console.log(value.toUpperCase())
+  }else if(typeof value==='number'){
+        console.log(value*2);
+  }else{
+    return -value
+  }
+
+}
+
+processValue('hello')
+processValue(5)
+console.log (processValue(true))
+
+
+// 
+function move(direction:"north"| "south" | "east" |"west") {
+  switch(direction) {
+    case "north":
+      return { x: 0, y: 1 };
+    case "south":
+      return { x: 0, y: -1 };
+    case "east":
+      return { x: 1, y: 0 };
+    case "west":
+      return { x: -1, y: 0 };
+  }
+}
+
+
+console.log(move("north"));

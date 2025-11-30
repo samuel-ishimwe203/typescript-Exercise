@@ -43,5 +43,40 @@ function getFirstElement(arr) {
 }
 console.log(getFirstElement([1, 2, 3]));
 console.log(getFirstElement(["a", "b", "c"]));
+function applyOperation(a, b, operation) {
+    return operation(a, b);
+}
+const add = (x, y) => x + y;
+const multiply = (x, y) => x * y;
+console.log(applyOperation(5, 10, add));
+console.log(applyOperation(5, 10, multiply));
+function processValue(value) {
+    if (typeof value === 'string') {
+        console.log(value.toUpperCase());
+    }
+    else if (typeof value === 'number') {
+        console.log(value * 2);
+    }
+    else {
+        return -value;
+    }
+}
+processValue('hello');
+processValue(5);
+console.log(processValue(true));
+// 
+function move(direction) {
+    switch (direction) {
+        case "north":
+            return { x: 0, y: 1 };
+        case "south":
+            return { x: 0, y: -1 };
+        case "east":
+            return { x: 1, y: 0 };
+        case "west":
+            return { x: -1, y: 0 };
+    }
+}
+console.log(move("north"));
 export {};
 //# sourceMappingURL=revision.js.map
