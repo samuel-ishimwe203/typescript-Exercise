@@ -487,3 +487,35 @@ const preview: UserPreview = { id: 1, name: "Alice", email: "alice@example.com" 
 
 console.log(publicUser)
 console.log(preview)
+
+
+
+
+
+//
+
+type Product={
+    name:string;
+    price:number;
+}
+function calculateTotal(items:Product[]) {
+  let total = 0;
+  for (let item of items) {
+    total += item.price;
+  }
+  return total.toFixed(2);
+}
+
+function applyDiscount(amount:number, discount:number):number {
+  const discountedAmount = amount - (amount * discount);
+  return Number(discountedAmount.toFixed(2));
+}
+
+const products:Product[] = [
+  { name: "Laptop", price: 999 },
+  { name: "Mouse", price: 25 },
+  { name: "Keyboard", price: 79 }
+];
+
+const total = calculateTotal(products);
+
