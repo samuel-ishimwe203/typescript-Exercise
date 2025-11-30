@@ -464,120 +464,26 @@
 
 // }
 
-// interface items2{
-//     location:string;
-//     price:number;
-// }
+// 
 
-// type combine= Items | items2;
-// function display(item:combine){
-//     if('location'in item){
-//         console.log(item.location.toUpperCase());
-//     }
-    
-// }
-
-
-// interface Car {
-//     brand: string;
-//     model?: string;
-//     price?: number;
-// }
-
-// function printCarModel(car: Car) {
-    
-//     if(car.model){
-//           console.log(car.model.toUpperCase());
-
-//     }else {
-//         console.log('no model here')
-//     }
-
-//     if(car.price !== undefined){
-//         console.log(car.price.toFixed(2));
-//     }
-  
-   
-// }
-
-// printCarModel({ brand: "Toyota" , price: 3000});
-
-//
-
-// interface Address{
-//     city:string;
-//     street?:string;
-    
-// }
-
-// interface Customer{
-//     name:string;
-//     address:Address
-// }
-// interface Order{
-//     customer:Customer;
-// }
-// const logOrder = (order: Order) => {
-//   console.log(`${order.customer.name} is Shipping to: ${order.customer.address.city}`);
-// };
-
-// logOrder({
-//   customer: {
-//     name: 'Jane',
-
-//     address:{
-
-//         city:'kigali',
-//     },
-    
-//   }
-// });
-
-
-//
-
-
-function move(direction: 'up'| 'down'|'left'|'right', distance:number) {}
-
-// TESTS
-
-move('up', 10);
-move('left', 5);
-
-move(
-  // @ts-expect-error - "up-right" is not a valid direction
-  'up-right',
-  10
-);
-
-move(
-  // @ts-expect-error - "down-left" is not a valid direction
-  'down-left',
-  20
-);
-
-move(
-  'up',
-  // @ts-expect-error - "20" is not a valid distance
-  '20'
-);
-
-
-interface Ingredient{
-    title:string;
-    ingredients:{};
-    instructions:string;
+interface User{
+    id:number;
+    name:string;
+    email:string;
+    password:number;
+    createAt:string;
 }
 
-const processRecipe = (recipe: Ingredient) => {
-  console.log(recipe.ingredients);
-};
+type PublicUser =Omit<User, 'password'>
+type UserPreview =Pick<User, "id" |"name" | "email" >
+const user: PublicUser = {id:1,
+    name:'samuel',
+    email:'samue@gmail.com',
+    createAt:"sss",
+ };
 
-processRecipe({
-  title: 'Chocolate Chip Cookies',
-  ingredients: [
-    { name: 'Flour', quantity: 4 },
-    { name: 'Sugar', quantity: '1 cup', price: 5 },
-  ],
-  instructions: '...',
-});
+const publicUser: PublicUser = user; // Should work, password is optional
+const preview: UserPreview = { id: 1, name: "Alice", email: "alice@example.com" };
+
+console.log(publicUser)
+console.log(preview)
