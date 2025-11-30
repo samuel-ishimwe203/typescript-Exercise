@@ -519,3 +519,17 @@ const products:Product[] = [
 
 const total = calculateTotal(products);
 
+//
+
+
+enum Status{
+  Active='active',
+  InActive='Inactive',
+  Pending ='pending'
+
+}
+function getStatusMessage(status:Status) {
+  // Your code here
+  return `the process is :${status}`
+}
+console.log(getStatusMessage(Status.InActive))
