@@ -500,4 +500,4 @@ function printCarModel(car: Car) {
    
 }
 
-printCarModel({ brand: "Toyota" , price: '3000'});
+printCarModel({ brand: "Toyota" , price: 3000});
