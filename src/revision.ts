@@ -545,3 +545,15 @@ function getFirstElement<T>(arr:T[]){
 console.log(getFirstElement([1, 2, 3]))
 console.log(getFirstElement(["a","b","c"]))
 
+
+// Define a missing TypeScript types
+type Operation = (a: number, b: number) => number; 
+function applyOperation(a:number, b:number, operation: Operation) {
+  return operation(a, b);
+}
+
+const add = (x:number, y:number) => x + y;
+const multiply = (x:number, y:number) => x * y;
+
+console.log(applyOperation(5, 10, add));
+console.log(applyOperation(5, 10, multiply));
