@@ -1,13 +1,4 @@
 //  // Create a function that takes two numbers as parameters and returns their sum. Ensure proper type annotations for parameters and return type.
-const user = { id: 1,
-    name: 'samuel',
-    email: 'samue@gmail.com',
-    createAt: "sss",
-};
-const publicUser = user; // Should work, password is optional
-const preview = { id: 1, name: "Alice", email: "alice@example.com" };
-console.log(publicUser);
-console.log(preview);
 function calculateTotal(items) {
     let total = 0;
     for (let item of items) {
@@ -78,5 +69,29 @@ function move(direction) {
     }
 }
 console.log(move("north"));
+// 
+class BankAccount {
+    constructor(initialBalance) {
+        this.balance = initialBalance;
+    }
+    deposit(amount) {
+        this.balance += amount;
+    }
+    withdraw(amount) {
+        if (amount <= this.balance) {
+            this.balance -= amount;
+        }
+        else {
+            console.log("Insufficient funds");
+        }
+    }
+    getBalance() {
+        return this.balance;
+    }
+}
+const account = new BankAccount(1000);
+account.deposit(500);
+account.withdraw(200);
+console.log(account.getBalance());
 export {};
 //# sourceMappingURL=revision.js.map

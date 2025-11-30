@@ -474,19 +474,19 @@ interface User{
     createAt:string;
 }
 
-type PublicUser =Omit<User, 'password'>
-type UserPreview =Pick<User, "id" |"name" | "email" >
-const user: PublicUser = {id:1,
-    name:'samuel',
-    email:'samue@gmail.com',
-    createAt:"sss",
- };
+// type PublicUser =Omit<User, 'password'>
+// type UserPreview =Pick<User, "id" |"name" | "email" >
+// const user: PublicUser = {id:1,
+//     name:'samuel',
+//     email:'samue@gmail.com',
+//     createAt:"sss",
+//  };
 
-const publicUser: PublicUser = user; // Should work, password is optional
-const preview: UserPreview = { id: 1, name: "Alice", email: "alice@example.com" };
+// const publicUser: PublicUser = user; // Should work, password is optional
+// const preview: UserPreview = { id: 1, name: "Alice", email: "alice@example.com" };
 
-console.log(publicUser)
-console.log(preview)
+// console.log(publicUser)
+// console.log(preview)
 
 
 
@@ -627,3 +627,12 @@ const account = new BankAccount(1000);
 account.deposit(500);
 account.withdraw(200);
 console.log(account.getBalance()); 
+
+
+interface User {
+  name: string;
+  age: number;
+  email: string;
+}
+
+
