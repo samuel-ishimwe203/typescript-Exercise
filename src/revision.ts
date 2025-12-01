@@ -662,7 +662,7 @@ console.log(response)
 
 interface Book{
   title:string, isbn:string}
-const items: (Boo | string)[] = [
+const items: (Book | string)[] = [
   { title: "1984", isbn: "978-0451524935" },
   "Not a book",
   { title: "Brave New World", isbn: "978-0060085261" }
