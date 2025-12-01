@@ -674,5 +674,5 @@ function isBook(value:{}){
 }
 
 const books = items.filter(isBook);
-console.log(bo)
+console.log(b)
 

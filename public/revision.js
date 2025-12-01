@@ -110,6 +110,6 @@ function isBook(value) {
     return value;
 }
 const books = items.filter(isBook);
-console.log(bo);
+console.log(b);
 export {};
 //# sourceMappingURL=revision.js.map
