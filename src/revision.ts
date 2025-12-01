@@ -636,3 +636,18 @@ interface User {
 }
 
 
+// Generic specialized
+
+
+type apiResponse={
+  data:any;
+  isError:boolean
+}
+
+
+const response={
+  data:'success',
+  isError:true
+}
+
+console.log(response)
