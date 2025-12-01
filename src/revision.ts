@@ -623,7 +623,7 @@ console.log(move("north"));
   } 
 }
 
-const account = new BankAccount(1000);
+const account = new BankAccount(10000);
 account.deposit(500);
 account.withdraw(200);
 console.log(account.getBalance()); 
