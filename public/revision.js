@@ -96,10 +96,20 @@ console.log(account.getBalance());
 const response = {
     data: {
         data: 'success',
-        age: 43
+        age: 436
     },
     isError: true
 };
 console.log(response);
+const items = [
+    { title: "1984", isbn: "978-0451524935" },
+    "Not a book",
+    { title: "Brave New World", isbn: "978-0060085261" }
+];
+function isBook(value) {
+    return value;
+}
+const books = items.filter(isBook);
+console.log(books);
 export {};
 //# sourceMappingURL=revision.js.map
