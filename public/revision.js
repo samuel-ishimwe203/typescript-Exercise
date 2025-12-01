@@ -89,13 +89,13 @@ class BankAccount {
         return this.balance;
     }
 }
-const account = new BankAccount(10000);
+const account = new BankAccount(1000);
 account.deposit(500);
 account.withdraw(200);
 console.log(account.getBalance());
 const response = {
     data: {
-        data: 'successs',
+        data: 'success',
         age: 436
     },
     isError: true

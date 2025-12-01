@@ -623,7 +623,7 @@ console.log(move("north"));
   } 
 }
 
-const account = new BankAccount(10000);
+const account = new BankAccount(1000);
 account.deposit(500);
 account.withdraw(200);
 console.log(account.getBalance()); 
@@ -648,7 +648,7 @@ type responseRes=apiResponse<{data:string, age:number}>
 const response:responseRes={
 
   data:{
-    data:'successs',
+    data:'success',
     age:436
   },
   isError:true
