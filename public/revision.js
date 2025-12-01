@@ -95,7 +95,7 @@ account.withdraw(200);
 console.log(account.getBalance());
 const response = {
     data: {
-        data: 'successs',
+        data: 'success',
         age: 436
     },
     isError: true
