@@ -639,14 +639,19 @@ interface User {
 // Generic specialized
 
 
-type apiResponse={
-  data:any;
+type apiResponse<Data>={
+  data:Data;
   isError:boolean
 }
 
 
-const response={
-  data:'success',
+const response:apiResponse<{data:string, age:number}>={
+  data:{
+    data:'success',
+    age:45
+
+  },
+
   isError:true
 }
 

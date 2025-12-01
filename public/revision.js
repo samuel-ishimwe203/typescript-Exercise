@@ -93,5 +93,10 @@ const account = new BankAccount(1000);
 account.deposit(500);
 account.withdraw(200);
 console.log(account.getBalance());
+const response = {
+    data: 'success',
+    isError: true
+};
+console.log(response);
 export {};
 //# sourceMappingURL=revision.js.map
