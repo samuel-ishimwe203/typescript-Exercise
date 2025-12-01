@@ -94,7 +94,10 @@ account.deposit(500);
 account.withdraw(200);
 console.log(account.getBalance());
 const response = {
-    data: 'success',
+    data: {
+        data: 'success',
+        age: 45
+    },
     isError: true
 };
 console.log(response);

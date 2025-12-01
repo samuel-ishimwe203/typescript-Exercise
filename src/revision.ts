@@ -644,15 +644,17 @@ type apiResponse<Data>={
   isError:boolean
 }
 
+type responseRes=apiResponse<{data:string, age:number}>
+const response:responseRes={
 
-const response:apiResponse<{data:string, age:number}>={
   data:{
     data:'success',
-    age:45
-
+    age:43
   },
-
   isError:true
+
 }
 
 console.log(response)
+
+
