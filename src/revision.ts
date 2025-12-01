@@ -648,7 +648,7 @@ type responseRes=apiResponse<{data:string, age:number}>
 const response:responseRes={
 
   data:{
-    data:'success',
+    data:'successs',
     age:436
   },
   isError:true
