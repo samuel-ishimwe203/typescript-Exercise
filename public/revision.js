@@ -111,6 +111,9 @@ function isBook(value) {
 }
 const books = items.filter(isBook);
 console.log(books);
-return obj[key];
+// Complete the types of this function
+function getProperty(obj, key) {
+    return obj[key];
+}
 export {};
 //# sourceMappingURL=revision.js.map

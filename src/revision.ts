@@ -700,6 +700,6 @@ interface User {
 }
 
 // Complete the types of this function
-function getProperty<T,U>(obj:T, key:U extends keyof T):T[U]| {
+function getProperty<T,U extends keyof T>(obj:T, key:U):T[U] {
   return obj[key];
 }
