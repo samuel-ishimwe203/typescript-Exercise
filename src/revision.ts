@@ -865,13 +865,16 @@ interface DuckTyping{
 }
 
 const obj1={
-  duck:()=>console.log('this is duck')
+  duck:()=>console.log('this is duck'),
+  name:'samuel'
 }
 
 const obj2={
-  duck:()=>console.log('also successfully')
+  duck:()=>console.log('also successfully'),
+  age:22
 }
 
-function ducking(duck:DuckTyping){
-  duck
+function ducking(ducks:DuckTyping){
+  ducks.duck()
 }
+
