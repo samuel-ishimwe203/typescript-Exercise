@@ -124,5 +124,10 @@ const nameOnly = getProperty(user, 'name');
 const emailOnly = getProperty(user, 'email');
 console.log(nameOnly);
 console.log(emailOnly);
+function formatUserTuple(user) {
+    const [name, age, active] = user;
+    return `${name} is ${age} years old and is ${active ? "active" : "inactive"}`;
+}
+console.log(formatUserTuple(['samuel', 22, true]));
 export {};
 //# sourceMappingURL=revision.js.map
