@@ -117,9 +117,10 @@ function getProperty(obj, key) {
 }
 const user = {
     name: 'samuel',
-    age: 22,
+    age: 34,
     email: 'samuel@gmail.com'
 };
-const names = getProperty(user, 'name');
+const nameOnly = getProperty(user, 'name');
+const emailOnly = getProperty(user, 'email');
 export {};
 //# sourceMappingURL=revision.js.map

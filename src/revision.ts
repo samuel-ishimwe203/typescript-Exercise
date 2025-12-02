@@ -693,20 +693,22 @@ function getColorCode(color: Color): never {
 console.log(getColorCode(Color.Blue))*/
 
 
-interface UserS {
+interface Users {
   name: string;
   age: number;
   email: string;
 }
 
 // Complete the types of this function
-function getProperty<T,U extends keyof T>(obj:T, key:U):T[U] {
+function getProperty<T,U extends keyof T>(obj:T, key:U) {
   return obj[key];
 }
 
-const user:UserS={
+const user:Users={
   name:'samuel',
-  age:22,
-  email:'samuel@gmail.com'}
+  age:34,
+  email:'samuel@gmail.com'
+}
 
-  const names=getProperty(user,'name')
+const nameOnly=getProperty(user,'name');
+const emailOnly=getProperty(user,'email')
