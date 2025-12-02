@@ -130,7 +130,7 @@ function formatUserTuple(user) {
 }
 console.log(formatUserTuple(['samuel', 22, true]));
 function indexProductsById(arr) {
-    return arr[0];
+    return arr[1];
 }
 const productss = [
     { id: 1, name: "Laptop", price: 999 },
@@ -138,5 +138,18 @@ const productss = [
 ];
 const indexed = indexProductsById(productss);
 console.log(indexed);
+const obj1 = {
+    duck: () => console.log('this is duck'),
+    name: 'samuel'
+};
+const obj2 = {
+    duck: () => console.log('also successfully'),
+    age: 22
+};
+function ducking(ducks) {
+    ducks.duck();
+}
+ducking(obj1);
+ducking(obj2);
 export {};
 //# sourceMappingURL=revision.js.map
