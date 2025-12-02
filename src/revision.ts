@@ -678,7 +678,7 @@ console.log(books)
 
 
 
-enum Color {
+/*enum Color {
   Red = "RED",
   Green = "GREEN",
   Blue = "BLUEs"
@@ -690,6 +690,16 @@ function getColorCode(color: Color): never {
   throw new Error(`input the color ${color}`);
 }
 
-console.log(getColorCode(Color.Blue))
+console.log(getColorCode(Color.Blue))*/
 
 
+interface User {
+  name: string;
+  age: number;
+  email: string;
+}
+
+// Complete the types of this function
+function getProperty<T,U>(obj:T, key:U extends keyof T):T[U]| {
+  return obj[key];
+}

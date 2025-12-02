@@ -111,15 +111,6 @@ function isBook(value) {
 }
 const books = items.filter(isBook);
 console.log(books);
-var Color;
-(function (Color) {
-    Color["Red"] = "RED";
-    Color["Green"] = "GREEN";
-    Color["Blue"] = "BLUEs";
-})(Color || (Color = {}));
-function getColorCode(color) {
-    throw new Error(`input the color ${color}`);
-}
-console.log(getColorCode(Color.Blue));
+return obj[key];
 export {};
 //# sourceMappingURL=revision.js.map
