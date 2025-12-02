@@ -129,23 +129,49 @@ function formatUserTuple(user) {
     return `${name} is ${age} years old and is ${active ? "active" : "inactive"}`;
 }
 console.log(formatUserTuple(['samuel', 22, true]));
-function calculateTotall(items) {
-    let total = 0;
-    for (let item of items) {
-        total += item.price;
+//
+// type Products={
+//   name:string;
+//   price:number
+// }
+// function calculateTotall(items:Products[]) {
+//   let total = 0;
+//   for (let item of items) {
+//     total += item.price;
+//   }
+//   return total.toFixed(2);
+// }
+// function applyDiscountl(amount:number, discount:number) {
+//   const discountedAmount = amount - (amount * discount);
+//   return discountedAmount;
+// }
+// const productss = [
+//   { name: "Laptop", price: 999 },
+//   { name: "Mouse", price: 25 },
+//   { name: "Keyboard", price: 79 }
+// ];
+// const total = calculateTotall(productss);
+// const discounted = applyDiscountl(total, 0.1);
+function mergeObjects(obj1, obj2) {
+    return Object.assign(Object.assign({}, obj1), obj2);
+}
+function getNestedValue(obj, path) {
+    const keys = path.split('.');
+    let value = obj;
+    for (let key of keys) {
+        value = value[key];
     }
-    return total.toFixed(2);
+    return value;
 }
-function applyDiscountl(amount, discount) {
-    const discountedAmount = amount - (amount * discount);
-    return discountedAmount;
-}
-const productss = [
-    { name: "Laptop", price: 999 },
-    { name: "Mouse", price: 25 },
-    { name: "Keyboard", price: 79 }
-];
-const total = calculateTotall(productss);
-const discounted = applyDiscountl(total, 0.1);
+const person = {
+    name: "John",
+    address: {
+        street: "123 Main St",
+        city: "New York"
+    }
+};
+const updates = { age: 30, city: "Boston" };
+const merged = mergeObjects(person, updates);
+const street = getNestedValue(person, "address.street");
 export {};
 //# sourceMappingURL=revision.js.map
