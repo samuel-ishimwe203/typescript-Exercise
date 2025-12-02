@@ -730,7 +730,12 @@ console.log(formatUserTuple(['samuel',22,true]))
 
 //
 
-function calculateTotal(items) {
+type Products={
+  name:string;
+  price:number
+}
+
+function calculateTotall(items:Products[]) {
   let total = 0;
   for (let item of items) {
     total += item.price;
@@ -738,16 +743,16 @@ function calculateTotal(items) {
   return total.toFixed(2);
 }
 
-function applyDiscount(amount, discount) {
+function applyDiscountl(amount:number, discount:number) {
   const discountedAmount = amount - (amount * discount);
   return discountedAmount;
 }
 
-const products = [
+const productss = [
   { name: "Laptop", price: 999 },
   { name: "Mouse", price: 25 },
   { name: "Keyboard", price: 79 }
 ];
 
-const total = calculateTotal(products);
-const discounted = applyDiscount(total, 0.1);
+const total = calculateTotall(productss);
+const discounted = applyDiscountl(total, 0.1);
