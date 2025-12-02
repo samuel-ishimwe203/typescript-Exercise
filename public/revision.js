@@ -115,11 +115,11 @@ var Color;
 (function (Color) {
     Color["Red"] = "RED";
     Color["Green"] = "GREEN";
-    Color["Blue"] = "BLUE";
+    Color["Blue"] = "BLUEs";
 })(Color || (Color = {}));
 function getColorCode(color) {
     throw new Error(`input the color`);
 }
-console.log(getColorCode(Color.Blue));
+console.log(getColorCode(Color.Blues));
 export {};
 //# sourceMappingURL=revision.js.map

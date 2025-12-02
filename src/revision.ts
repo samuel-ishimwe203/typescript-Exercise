@@ -681,7 +681,7 @@ console.log(books)
 enum Color {
   Red = "RED",
   Green = "GREEN",
-  Blue = "BLUE"
+  Blue = "BLUEs"
 }
 
 function getColorCode(color: Color): never {
@@ -689,6 +689,6 @@ function getColorCode(color: Color): never {
   throw new Error(`input the color`);
 }
 
-console.log(getColorCode(Color.Blue))
+console.log(getColorCode(Color.Blues))
 
 
