@@ -129,5 +129,24 @@ function formatUserTuple(user) {
     return `${name} is ${age} years old and is ${active ? "active" : "inactive"}`;
 }
 console.log(formatUserTuple(['samuel', 22, true]));
+//
+function calculateTotal(items) {
+    let total = 0;
+    for (let item of items) {
+        total += item.price;
+    }
+    return total.toFixed(2);
+}
+function applyDiscount(amount, discount) {
+    const discountedAmount = amount - (amount * discount);
+    return discountedAmount;
+}
+const products = [
+    { name: "Laptop", price: 999 },
+    { name: "Mouse", price: 25 },
+    { name: "Keyboard", price: 79 }
+];
+const total = calculateTotal(products);
+const discounted = applyDiscount(total, 0.1);
 export {};
 //# sourceMappingURL=revision.js.map
