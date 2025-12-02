@@ -115,5 +115,11 @@ console.log(books);
 function getProperty(obj, key) {
     return obj[key];
 }
+const user = {
+    name: 'samuel',
+    age: 22,
+    email: 'samuel@gmail.com'
+};
+const names = getProperty(user, 'name');
 export {};
 //# sourceMappingURL=revision.js.map

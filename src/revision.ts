@@ -693,7 +693,7 @@ function getColorCode(color: Color): never {
 console.log(getColorCode(Color.Blue))*/
 
 
-interface User {
+interface UserS {
   name: string;
   age: number;
   email: string;
@@ -703,3 +703,10 @@ interface User {
 function getProperty<T,U extends keyof T>(obj:T, key:U):T[U] {
   return obj[key];
 }
+
+const user:UserS={
+  name:'samuel',
+  age:22,
+  email:'samuel@gmail.com'}
+
+  const names=getProperty(user,'name')
