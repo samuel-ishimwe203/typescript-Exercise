@@ -712,3 +712,5 @@ const user:Users={
 
 const nameOnly=getProperty(user,'name');
 const emailOnly=getProperty(user,'email')
+console.log(nameOnly)
+console.log(emailOnly)
