@@ -118,8 +118,8 @@ var Color;
     Color["Blue"] = "BLUEs";
 })(Color || (Color = {}));
 function getColorCode(color) {
-    throw new Error(`input the color`);
+    throw new Error(`input the color ${color}`);
 }
-console.log(getColorCode(Color.Blues));
+console.log(getColorCode(Color.Blue));
 export {};
 //# sourceMappingURL=revision.js.map

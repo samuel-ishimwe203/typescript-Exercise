@@ -682,13 +682,14 @@ enum Color {
   Red = "RED",
   Green = "GREEN",
   Blue = "BLUEs"
+
 }
 
 function getColorCode(color: Color): never {
   
-  throw new Error(`input the color`);
+  throw new Error(`input the color ${color}`);
 }
 
-console.log(getColorCode(Color.Blues))
+console.log(getColorCode(Color.Blue))
 
 
