@@ -758,11 +758,11 @@ console.log(formatUserTuple(['samuel',22,true]))
 // const discounted = applyDiscountl(total, 0.1);
 
 
-function mergeObjects(obj1, obj2) {
+function mergeObjects<T extends object, U extends object>(obj1:T, obj2:U) {
   return { ...obj1, ...obj2 };
 }
 
-function getNestedValue(obj, path) {
+function getNestedValue<T , U extends keyof T>(obj:T, path:U) {
   const keys = path.split('.');
   let value = obj;
   for (let key of keys) {
