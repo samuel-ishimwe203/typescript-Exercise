@@ -129,6 +129,7 @@ function formatUserTuple(user) {
     return `${name} is ${age} years old and is ${active ? "active" : "inactive"}`;
 }
 console.log(formatUserTuple(['samuel', 22, true]));
+export {};
 //
 // type Products={
 //   name:string;
@@ -152,26 +153,42 @@ console.log(formatUserTuple(['samuel', 22, true]));
 // ];
 // const total = calculateTotall(productss);
 // const discounted = applyDiscountl(total, 0.1);
-function mergeObjects(obj1, obj2) {
-    return Object.assign(Object.assign({}, obj1), obj2);
-}
-function getNestedValue(obj, path) {
-    const keys = path.split('.');
-    let value = obj;
-    for (let key of keys) {
-        value = value[key];
-    }
-    return value;
-}
-const person = {
-    name: "John",
-    address: {
-        street: "123 Main St",
-        city: "New York"
-    }
-};
-const updates = { age: 30, city: "Boston" };
-const merged = mergeObjects(person, updates);
-const street = getNestedValue(person, "address.street");
-export {};
+// function mergeObjects<T extends object, U extends object>(obj1:T, obj2:U) {
+//   return { ...obj1, ...obj2 };
+// }
+// function getNestedValue<T , U extends keyof T>(obj:T, path:U) {
+//   const keys = path.split('.');
+//   let value = obj;
+//   for (let key of keys) {
+//     value = value[key];
+//   }
+//   return value;
+// }
+// const person = {
+//   name: "John",
+//   address: {
+//     street: "123 Main St",
+//     city: "New York"
+//   }
+// };
+// const updates = { age: 30, city: "Boston" };
+// const merged = mergeObjects(person, updates);
+// const street = getNestedValue(person, "address.street");
 //# sourceMappingURL=revision.js.map
+
+
+
+interface Producte{
+    id:String,
+    name:String,
+    price:number
+
+}
+
+const productss = [
+  { id: 1, name: "Laptop", price: 999 },
+  { id: 2, name: "Mouse", price: 25 }
+];
+
+const indexed = indexProductsById(producte);
+
