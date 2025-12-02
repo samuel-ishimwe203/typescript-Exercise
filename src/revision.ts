@@ -676,3 +676,19 @@ function isBook(value:{}){
 const books = items.filter(isBook);
 console.log(books)
 
+
+
+enum Color {
+  Red = "RED",
+  Green = "GREEN",
+  Blue = "BLUE"
+}
+
+function getColorCode(color: Color): never {
+  
+  throw new Error(`input the color`);
+}
+
+console.log(getColorCode(Color.Blue))
+
+
