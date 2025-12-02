@@ -136,7 +136,7 @@ const productss = [
     { id: 1, name: "Laptop", price: 999 },
     { id: 2, name: "Mouse", price: 25 }
 ];
-const indexed = indexProductsById(productss);
+const indexed = indexProductsById(produc);
 console.log(indexed);
 export {};
 //# sourceMappingURL=revision.js.map

@@ -853,5 +853,5 @@ const productss = [
   { id: 2, name: "Mouse", price: 25 }
 ];
 
-const indexed = indexProductsById(productss);
+const indexed = indexProductsById(produc);
 console.log(indexed)
