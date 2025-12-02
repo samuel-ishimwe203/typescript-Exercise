@@ -855,3 +855,15 @@ const productss = [
 
 const indexed = indexProductsById(productss);
 console.log(indexed)
+
+
+// duck-typing
+
+
+interface DuckTyping{
+  duck:()=>void;
+}
+
+const obj1={
+  duck:()=>console.log('this is duck')
+}
