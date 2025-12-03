@@ -721,7 +721,7 @@ console.log(emailOnly)
 type UserTuple =[name:string, age:number, active:boolean ] ;
 
 function formatUserTuple(user:UserTuple) {
-  const [name, age, active] = users;
+  const [name, age, active] = user;
   return `${name} is ${age} years old and is ${active ? "active" : "inactive"}`;
 }
 
