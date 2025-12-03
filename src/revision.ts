@@ -881,3 +881,6 @@ function ducking(ducks:DuckTyping){
 ducking(obj1)
 ducking(obj2)
 
+
+// 
+
