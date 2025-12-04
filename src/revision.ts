@@ -865,7 +865,7 @@ interface DuckTyping{
 }
 
 const obj1={
-  duck:()=>console.log('this is duck'),
+  duck:()=>console.log('this is ducks'),
   name:'samuel'
 }
 
@@ -894,5 +894,5 @@ const items: (Book | string)[] = [
   { title: "Brave New World", isbn: "978-0060085261" }
 ];
 
-const books = items.filter(isBook);
+const books = items.filter(isBook);z
 
