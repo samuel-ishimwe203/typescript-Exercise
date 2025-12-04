@@ -842,7 +842,7 @@ console.log(formatUserTuple(['samuel',22,true]))
 interface Products{
   id:number,
   name:string,
-  price:number,
+  price:number
 
 }
 function indexProductsById(arr:Products[]){
