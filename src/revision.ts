@@ -848,13 +848,13 @@ interface Products{
 function indexProductsById(arr:Products[]){
   return arr[1]
 }
-// const productss = [
-//   { id: 1, name: "Laptop", price: 999 },
-//   { id: 2, name: "Mouse", price: 25 }
-// ];
+const productss = [
+  { id: 1, name: "Laptop", price: 999 },
+  { id: 2, name: "Mouse", price: 25 }
+];
 
-// const indexed = indexProductsById(productss);
-// console.log(indexed)
+const indexed = indexProductsById(productss);
+console.log(indexed)
 
 
 // duck-typing
