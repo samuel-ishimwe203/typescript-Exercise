@@ -786,7 +786,7 @@ console.log(formatUserTuple(['samuel',22,true]))
 // };
 
 // const updates = { age: 30, city: "Boston" };
-// const merged = mergeObjects(person, updates)
+// const merged = mergeObjects(person, updates);
 // const street = getNestedValue(person, "address.street");
 
 
