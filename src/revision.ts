@@ -891,8 +891,8 @@ interface Book{
 const items: (Book | string)[] = [
   { title: "1984", isbn: "978-0451524935" },
   "Not a book",
-  { title: "Brave New World", isbn: "978-0060085261" }
+  { title: "Brave New World", isbn: "978-0060085261s" }
 ];
 
-const books = items.filter(isBook);z
+const books = items.filter(isBook);
 
