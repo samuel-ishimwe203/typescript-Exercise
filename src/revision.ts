@@ -888,7 +888,7 @@ ducking(obj2)
 interface Book{
   title:
 }
-const items: (Book | string)[] = [
+const item: (Book | string)[] = [
   { title: "1984", isbn: "978-0451524935" },
   "Not a book",
   { title: "Brave New World", isbn: "978-0060085261" }
