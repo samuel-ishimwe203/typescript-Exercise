@@ -894,5 +894,5 @@ const items: (Book | string)[] = [
   { title: "Brave New World", isbn: "978-0060085261" }
 ];
 
-const books = items.filter(isBooks);
+const books = items.filter(isBook);
 
