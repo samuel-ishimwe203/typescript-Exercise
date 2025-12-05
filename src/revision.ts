@@ -840,7 +840,7 @@ console.log(formatUserTuple(['samuel',22,true]))
 
 
 interface Products{
-  id:number,
+  id:number
   name:string,
   price:number
 
