@@ -845,10 +845,7 @@ interface Products{
   price:number
 
 }
-function indexProductsById(arr:Products[h
-
-  
-]){
+function indexProductsById(arr:Products[]){
   return arr[1]
 }
 const productss = [
