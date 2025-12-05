@@ -849,7 +849,7 @@ function indexProductsById(arr:Products[]){
   return arr[1]
 }
 const productss = [
-  { id: 1, name: "Laptop", price: 999 },
+  { id: 1, name: "Laptop", price: 999 },s
   { id: 2, name: "Mouse", price: 25 }
 ];
 
