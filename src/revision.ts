@@ -865,7 +865,7 @@ interface DuckTyping{
 }
 
 const obj1={
-  duck:()=>console.log('this is ducks'),
+  duck:()=>console.log('this is duckss'),
   name:'samuel'
 }
 
