@@ -845,7 +845,7 @@ interface Products{
   price:number
 
   
-}
+};
 function indexProductsById(arr:Products[]){
   return arr[1]
 }
