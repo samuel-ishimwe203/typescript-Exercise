@@ -879,7 +879,8 @@ function ducking(ducks:DuckTyping){
   ducks.duck()
 }
 
-
+ducking(obj1)
+ducking(obj2)
 
 
 // 
