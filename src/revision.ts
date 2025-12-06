@@ -673,8 +673,8 @@ function isBook(value:{}){
 
 }
 
-const books = items.filter(isBook);
-console.log(books)
+// const books = items.filter(isBook);
+// console.log(books)
 
 
 
@@ -844,7 +844,8 @@ interface Products{
   name:string,
   price:number
 
-}
+
+};
 function indexProductsById(arr:Products[]){
   return arr[1]
 }
@@ -885,14 +886,14 @@ ducking(obj2)
 // 
 
 
-interface Book{
-  title:
-}
-const item: (Book | string)[] = [
-  { title: "1984", isbn: "978-0451524935" },
-  "Not a book",
-  { title: "Brave New World", isbn: "978-0060085261s" }
-];
+// interface Book{
+//   title:
+// }
+// const item: (Book | string)[] = [
+//   { title: "1984", isbn: "978-0451524935" },
+//   "Not a book",
+//   { title: "Brave New World", isbn: "978-0060085261s" }
+// ];
 
-const books = items.filter(isBook);
+// const books = items.filter(isBook);
 
