@@ -886,7 +886,9 @@ ducking(obj2)
 // 
 
 
-
+// interface Book{
+//   title:
+// }
 // const item: (Book | string)[] = [
 //   { title: "1984", isbn: "978-0451524935" },
 //   "Not a book",
