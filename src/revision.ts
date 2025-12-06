@@ -861,7 +861,7 @@ console.log(indexed)
 // duck-typing
 
 
-interface DuckTyping{
+nterface DuckTyping{
   duck:()=>void;
 }
 
