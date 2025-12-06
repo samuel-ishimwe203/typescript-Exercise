@@ -855,7 +855,7 @@ const productss = [
 ];
 
 const indexed = indexProductsById(productss);
-console.log(indexed)
+console.log(indexe)
 
 
 // duck-typing
