@@ -864,7 +864,7 @@ interface DuckTyping{
   duck:()=>void;
 }
 
-const obj1={
+const obj1={j
   duck:()=>console.log('this is duckss'),
   name:'samuel'
 }
