@@ -14,7 +14,7 @@ const me: isPerson={
         console.log(text)
     },
     spend(num:number):number{
-        console.log('I spent ', num)
+        console.log('I spent ', num);
         return num
     }
 
