@@ -47,6 +47,6 @@ let logDetail;
 logDetail = (sam) => {
     console.log(`${sam.name} is ${sam.age} years old`);
 };
-logDetail({ name'samuel', age: 34 });
+logDetail({ name: 'samuel', age: 34 });
 export {};
 //# sourceMappingURL=sandbox.js.map
