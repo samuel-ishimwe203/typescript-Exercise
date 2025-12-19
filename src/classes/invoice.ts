@@ -5,7 +5,7 @@ export class Invoice {
     // client:string;
     // details:string;
     // amount:number;
-,
+
     constructor(
          readonly client:string,
          private details:string,
